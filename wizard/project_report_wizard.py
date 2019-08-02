@@ -27,6 +27,7 @@ class ProjectReportButton(models.TransientModel):
 
 
     partner_select = fields.Many2many('res.users', string='Assigned to')
+    patient_select = fields.Many2many('res.partner', string='Paciente')
     stage_select = fields.Many2many('project.task.type', string="Stage")
 
     @api.multi
